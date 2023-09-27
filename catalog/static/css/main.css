@@ -1,0 +1,31 @@
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    background-color: gray;
+    line-height: 2em;
+}
+
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    color: #f66d52; /* Цвет  текста */
+  font-size: 1.5em; /* Размер  текста */
+  font-weight: bold;
+  padding: 20px 0px;
+  text-transform: uppercase;
+  line-height: 1;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+
+}
+
+.menu a:hover{
+    background-color: gray();
+    color: red; /* Меняем цвет текста */
+  -webkit-text-shadow: 2px 2px 2px #000;
+  -moz-text-shadow: 2px 2px 2px #000;
+      text-shadow: 2px 2px 2px #000;
+}
