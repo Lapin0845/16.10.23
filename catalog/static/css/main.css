@@ -3,15 +3,16 @@
     flex-direction: row;
     justify-content: space-evenly;
 
-    background-color: gray;
+    background-color: purple;
     line-height: 2em;
+
 }
 
 
 .menu a{
     text-decoration: none;
-    color: black;
-    color: #f66d52; /* Цвет  текста */
+    color: white;
+    color: white; /* Цвет  текста */
   font-size: 1.5em; /* Размер  текста */
   font-weight: bold;
   padding: 20px 0px;
@@ -23,9 +24,17 @@
 }
 
 .menu a:hover{
-    background-color: gray();
+    background-color: purple;
     color: red; /* Меняем цвет текста */
   -webkit-text-shadow: 2px 2px 2px #000;
   -moz-text-shadow: 2px 2px 2px #000;
       text-shadow: 2px 2px 2px #000;
+}
+
+body{
+    background-image: url("https://cdn.gobankingrates.com/wp-content/uploads/2020/03/empty-movie-theater-shutterstock_257017468.jpg");
+}
+
+h1,h2{
+    color: white;
 }
