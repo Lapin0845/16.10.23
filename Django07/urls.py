@@ -23,12 +23,15 @@ urlpatterns = [
     path('', views.index, name='home'),
     path('kino/', views.Kinolist123.as_view(), name='allkino'),
     #path('kino/<int:id>', views.info, name='info'),
-    path('kino/<slug:pk>/<str:title>', views.KinoDetail.as_view(), name='info'),
+    path('kino/<slug:pk>/', views.KinoDetail.as_view(), name='info'),
+    path('actor/', views.Actorlist.as_view(), name='allactor'),
+    path('director/', views.Directorlist.as_view(), name='alldirector'),
     path('user/', include('django.contrib.auth.urls')),
     path('', views.index, name='home'),
     path('status/', views.status, name='status'),
     path('status/prosmotr/<int:id1>/<int:id2>/<int:id3>/', views.prosmotr, name='prosmotr'),
     path('status/buy/<int:type>/', views.buy, name='buystatus'),
+    path('user/registr/', views.registr, name='registr'),
 
 
 ]

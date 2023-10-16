@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+    <h2>Режиссеры:</h2>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <ul>{% for director in director_list %}
+    <li>
+        <a href="{{ director.get_absolute_url }}">{{ director.fname }} {{ director.lname }}</a>
+    </li>
+    {% endfor %}
+    </ul>
+
+{% endblock content %}

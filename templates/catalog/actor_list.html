@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+    <h2>Актеры:</h2>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <ul>{% for actor in actor_list %}
+    <li>
+        <a href="{{ actor.get_absolute_url }}">{{ actor.fname }} {{ actor.lname }}</a>
+    </li>
+    {% endfor %}
+    </ul>
+
+{% endblock content %}
